@@ -8,7 +8,7 @@ class Home extends Component {
       <div className="Content">
         <div className="TextBox">
           <h2>Welcome To <br/><span>TSF BANK</span></h2>
-          <h5><span>Basic Banking System</span></h5>
+          <h5><strong>Basic Banking System</strong></h5>
           <p>It is a simple dynamic website in which one can see all the customers and their details and their current amount. We can also send amount from one customer to another customer and can also see their transaction history.</p>
           <p>©2021 Made by <strong>Rahul Kumar Verma</strong></p>
           
