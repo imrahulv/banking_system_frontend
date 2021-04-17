@@ -18,7 +18,7 @@ class MakeTransaction extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/customers")
+    fetch("https://ancient-plains-40036.herokuapp.com/customers")
       .then((res) => res.json())
       .then((result) => {
         this.setState({
@@ -64,7 +64,7 @@ class MakeTransaction extends Component {
     if (senderbalance - this.state.balance < 0) {
       return alert("Insufficient balance, transaction failed");
     } else {
-      fetch("http://localhost:3001/transaction", {
+      fetch("https://ancient-plains-40036.herokuapp.com/transaction", {
         method: "put",
         headers: { "Content-Type": "application/json" },
 
@@ -77,7 +77,7 @@ class MakeTransaction extends Component {
         .then((response) => response.json())
         .then((response) => {
           if (response) {
-            fetch("http://localhost:3001/transactionHistory", {
+            fetch("https://ancient-plains-40036.herokuapp.com/transactionHistory", {
               method: "post",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({

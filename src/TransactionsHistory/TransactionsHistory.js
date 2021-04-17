@@ -11,7 +11,7 @@ class TransactionTable extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/transactionHistory")
+    fetch("https://ancient-plains-40036.herokuapp.com/transactionHistory")
       .then((res) => res.json())
       .then((result) => {
         

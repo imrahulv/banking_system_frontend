@@ -14,7 +14,7 @@ class ViewCustomer extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:3001/customers/${this.props.location.state}`)
+    fetch(`https://ancient-plains-40036.herokuapp.com/customers/${this.props.location.state}`)
       .then((res) => res.json())
       .then((result) => {
        this.setState({

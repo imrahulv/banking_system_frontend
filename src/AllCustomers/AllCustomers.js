@@ -15,7 +15,7 @@ class AllCustomers extends Component {
   }
 
      componentDidMount() {
-        fetch("http://localhost:3001/customers")
+        fetch("https://ancient-plains-40036.herokuapp.com/customers")
         .then(res => res.json())
         .then((result) => {
             this.setState({
