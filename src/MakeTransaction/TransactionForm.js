@@ -109,7 +109,7 @@ class MakeTransaction extends Component {
   render() {
 
 
-    let button=null;
+    let button=<Button variant="secondary">Submit</Button>
     if(this.state.selectFrom && this.state.selectTo && this.state.balance){
       button = 
         (
